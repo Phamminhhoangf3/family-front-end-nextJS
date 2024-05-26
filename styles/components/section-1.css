@@ -1,0 +1,74 @@
+.section-1 {
+  position: relative;
+}
+.section-1 .background {
+  filter: blur(2px);
+  opacity: 0.4;
+  height: 38vw;
+  background-color: white;
+  background-image: url("/assets/header/portrait_01.jpg"),
+    url("/assets/header/portrait_02.jpg"), url("/assets/header/portrait_03.jpg"),
+    url("/assets/header/portrait_04.jpg"), url("/assets/header/portrait_05.jpg"),
+    url("/assets/header/portrait_06.jpg"), url("/assets/header/portrait_07.jpg"),
+    url("/assets/header/portrait_08.jpg"), url("/assets/header/portrait_09.jpg"),
+    url("/assets/header/portrait_10.jpg"), url("/assets/header/portrait_11.jpg"),
+    url("/assets/header/portrait_12.jpg"), url("/assets/header/portrait_13.jpg"),
+    url("/assets/header/portrait_14.jpg"), url("/assets/header/portrait_15.jpg"),
+    url("/assets/header/portrait_16.jpg"), url("/assets/header/portrait_17.jpg"),
+    url("/assets/header/portrait_18.jpg"), url("/assets/header/portrait_19.jpg"),
+    url("/assets/header/portrait_20.jpg"), url("/assets/header/portrait_21.jpg"),
+    url("/assets/header/portrait_22.jpg"), url("/assets/header/portrait_23.jpg"),
+    url("/assets/header/portrait_24.jpg"), url("/assets/header/portrait_25.jpg"),
+    url("/assets/header/portrait_26.jpg"), url("/assets/header/portrait_27.jpg"),
+    url("/assets/header/portrait_28.jpg"), url("/assets/header/portrait_29.jpg"),
+    url("/assets/header/portrait_30.jpg"), url("/assets/header/portrait_31.jpg"),
+    url("/assets/header/portrait_32.jpg"), url("/assets/header/portrait_33.jpg"),
+    url("/assets/header/portrait_34.jpg"), url("/assets/header/portrait_35.jpg"),
+    url("/assets/header/portrait_36.jpg"), url("/assets/header/portrait_37.jpg"),
+    url("/assets/header/portrait_38.jpg"), url("/assets/header/portrait_39.jpg"),
+    url("/assets/header/portrait_40.jpg");
+  background-repeat: no-repeat;
+  background-position: 0vw top, 10vw top, 20vw top, 30vw top, 40vw top, 50vw top,
+    60vw top, 70vw top, 80vw top, 90vw top, 0vw 10vw, 10vw 10vw, 20vw 10vw,
+    30vw 10vw, 40vw 10vw, 50vw 10vw, 60vw 10vw, 70vw 10vw, 80vw 10vw, 90vw 10vw,
+    0vw 20vw, 10vw 20vw, 20vw 20vw, 30vw 20vw, 40vw 20vw, 50vw 20vw, 60vw 20vw,
+    70vw 20vw, 80vw 20vw, 90vw 20vw, 0vw 30vw, 10vw 30vw, 20vw 30vw, 30vw 30vw,
+    40vw 30vw, 50vw 30vw, 60vw 30vw, 70vw 30vw, 80vw 30vw, 90vw 30vw;
+  background-size: 10vw;
+}
+.section-1 .container {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  right: 0;
+  padding: 0 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+}
+.section-1 .container .member {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+.section-1 .container .member .avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  position: relative;
+}
+.section-1 .container .member .avatar img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+.section-1 .container .member .information h1 {
+  font-size: 70px;
+  margin-bottom: 18px;
+}
+.section-1 .container .member .information span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+}

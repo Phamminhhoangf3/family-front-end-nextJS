@@ -228,3 +228,8 @@
     transform: rotate(0deg);
   }
 }
+
+.btn {
+  background-color: #1f883d;
+  /* the rest of the styles */
+}

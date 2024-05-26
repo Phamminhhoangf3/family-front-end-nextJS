@@ -1,0 +1,259 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "tag": "son",
+      "title": "",
+      "type": "children",
+      "name": "John Lewis",
+      "date": "(1878 - 1923)",
+      "image": "/assets/section-3/member-21.jpg",
+      "dad": "",
+      "family": {
+        "id": 1,
+        "type": "family",
+        "husband": {
+          "tag": "",
+          "name": "John Lewis",
+          "date": "(1878 - 1923)",
+          "image": "/assets/section-3/member-21.jpg"
+        },
+        "wife": {
+          "tag": "wife",
+          "name": "Mary Lewis",
+          "date": "(1886 - 1958)",
+          "image": "/assets/section-3/member-8.jpg"
+        },
+        "exWife": {
+          "tag": "ex-wife",
+          "name": "Elizabeth Collins",
+          "date": "(1879 - 1907)",
+          "image": "/assets/section-3/member-6.jpg"
+        },
+        "children": [
+          {
+            "id": 1,
+            "tag": "son",
+            "type": "children",
+            "title": "husband",
+            "name": "Steven Lewis",
+            "date": "(1878 - 1923)",
+            "image": "/assets/section-3/member-26.jpg",
+            "dad": "John Lewis",
+            "family": {
+              "id": 2,
+              "type": "family",
+              "husband": {
+                "tag": "",
+                "name": "Steven Lewis",
+                "date": "(1878 - 1923)",
+                "image": "/assets/section-3/member-26.jpg"
+              },
+              "wife": {
+                "tag": "wife",
+                "name": "Barbara Lewis",
+                "date": "(1912 - 2002)",
+                "image": "/assets/section-3/member-6.jpg"
+              },
+              "children": [
+                {
+                  "id": 1,
+                  "type": "children",
+                  "tag": "son",
+                  "title": "husband",
+                  "name": "Steven Lewis",
+                  "date": "(1931 - 1990)",
+                  "image": "/assets/section-3/member-30.jpg",
+                  "dad": "Steven Lewis",
+                  "family": {
+                    "type": "family",
+                    "id": 4,
+                    "husband": {
+                      "tag": "",
+                      "name": "Steven West",
+                      "date": "(1964)",
+                      "image": "/assets/section-3/member-30.jpg"
+                    },
+                    "wife": {
+                      "tag": "wife",
+                      "name": "Rose Lewis",
+                      "date": "(1936 - 2018)",
+                      "image": "/assets/section-3/member-31.jpg"
+                    },
+                    "children": [
+                      {
+                        "id": 1,
+                        "type": "children",
+                        "tag": "daughter",
+                        "title": "wife",
+                        "name": "Lily West",
+                        "date": "(1963)",
+                        "image": "/assets/section-3/member-32.jpg",
+                        "dad": "Steven Lewis 2",
+                        "family": {
+                          "id": 9,
+                          "type": "family",
+                          "wife": {
+                            "tag": "wife",
+                            "name": "Lily West",
+                            "date": "(1963)",
+                            "image": "/assets/section-3/member-32.jpg"
+                          },
+                          "children": []
+                        }
+                      },
+                      {
+                        "id": 2,
+                        "type": "children",
+                        "tag": "son",
+                        "title": "husband",
+                        "name": "Vladimir West",
+                        "date": "(1963)",
+                        "image": "/assets/section-3/member-33.jpg",
+                        "dad": "Steven Lewis 2",
+                        "family": {
+                          "id": 10,
+                          "type": "family",
+                          "husband": {
+                            "tag": "husband",
+                            "name": "Vladimir Lewis",
+                            "date": "(1963)",
+                            "image": "/assets/section-3/member-33.jpg"
+                          },
+                          "children": []
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 2,
+                  "type": "children",
+                  "tag": "daughter",
+                  "title": "wife",
+                  "name": "Lily West",
+                  "date": "(1968)",
+                  "image": "/assets/section-3/member-7.jpg",
+                  "dad": "Steven Lewis",
+                  "family": {
+                    "id": 3,
+                    "type": "family",
+                    "wife": {
+                      "tag": "wife",
+                      "name": "Lily West",
+                      "date": "(1968)",
+                      "image": "/assets/section-3/member-7.jpg"
+                    },
+                    "children": []
+                  }
+                },
+                {
+                  "id": 3,
+                  "type": "children",
+                  "tag": "daughter",
+                  "title": "husband",
+                  "name": "John Lewis",
+                  "date": "(1938 - 2012)",
+                  "image": "/assets/section-3/member-27.jpg",
+                  "dad": "Steven Lewis",
+                  "family": {
+                    "id": 3,
+                    "type": "family",
+                    "husband": {
+                      "tag": "husband",
+                      "name": "John Lewis",
+                      "date": "(1938 - 2012)",
+                      "image": "/assets/section-3/member-27.jpg"
+                    },
+                    "children": []
+                  }
+                },
+                {
+                  "id": 4,
+                  "type": "children",
+                  "tag": "daughter",
+                  "title": "son",
+                  "name": "John Lewis",
+                  "date": "(1945 - 2003)",
+                  "image": "/assets/section-3/member-28.jpg",
+                  "dad": "Steven Lewis",
+                  "family": {
+                    "id": 3,
+                    "type": "family",
+                    "husband": {
+                      "tag": "husband",
+                      "name": "John Lewis",
+                      "date": "(1945 - 2003)",
+                      "image": "/assets/section-3/member-28.jpg"
+                    },
+                    "children": []
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": 2,
+            "type": "children",
+            "tag": "daughter",
+            "name": "Anastasia Adams",
+            "date": "(1915 - 1974)",
+            "image": "/assets/section-3/member-23.jpg",
+            "dad": "John Lewis",
+            "family": {
+              "id": 5,
+              "type": "family",
+              "wife": {
+                "tag": "",
+                "name": "Anastasia Adams",
+                "date": "(1937)",
+                "image": "/assets/section-3/member-23.jpg"
+              },
+              "children": []
+            }
+          },
+          {
+            "id": 3,
+            "type": "children",
+            "tag": "son",
+            "name": "Michael Lewis",
+            "date": "(1918 - 2016)",
+            "image": "/assets/section-3/member-20.jpg",
+            "dad": "John Lewis",
+            "family": {
+              "id": 6,
+              "type": "family",
+              "husband": {
+                "tag": "son",
+                "name": "Michael Lewis",
+                "date": "(1918 - 2016)",
+                "image": "/assets/section-3/member-20.jpg"
+              },
+              "children": []
+            }
+          },
+          {
+            "id": 4,
+            "type": "children",
+            "tag": "daughter",
+            "name": "Martha Taylor",
+            "date": "(1923 - 1923)",
+            "image": "/assets/section-3/member-14.jpg",
+            "dad": "John Lewis",
+            "family": {
+              "id": 7,
+              "type": "family",
+              "wife": {
+                "tag": "",
+                "name": "Martha Taylor",
+                "date": "(1923 - 1923)",
+                "image": "/assets/section-3/member-14.jpg"
+              },
+              "children": []
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

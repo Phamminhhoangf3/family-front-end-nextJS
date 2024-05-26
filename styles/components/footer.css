@@ -1,0 +1,46 @@
+.footer .above {
+  padding: 70px 10px;
+  background: white;
+  color: gray;
+  display: flex;
+  gap: 70px;
+  font-size: 14px;
+}
+.footer .above .content {
+  margin-left: 10%;
+  width: 455px;
+  text-align: left;
+}
+.footer .above ul li {
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+.footer .above ul li:hover {
+  opacity: 0.8;
+}
+.footer .above ul li .active {
+  font-weight: bold;
+}
+
+.footer .below {
+  opacity: 0.7;
+  height: 20vw;
+  background-color: white;
+  background-image: url("/assets/footer/portrait_01.jpg"),
+    url("/assets/footer/portrait_02.jpg"), url("/assets/footer/portrait_03.jpg"),
+    url("/assets/footer/portrait_04.jpg"), url("/assets/footer/portrait_05.jpg"),
+    url("/assets/footer/portrait_06.jpg"), url("/assets/footer/portrait_07.jpg"),
+    url("/assets/footer/portrait_08.jpg"), url("/assets/footer/portrait_09.jpg"),
+    url("/assets/footer/portrait_10.jpg"), url("/assets/footer/portrait_11.jpg"),
+    url("/assets/footer/portrait_12.jpg"), url("/assets/footer/portrait_13.jpg"),
+    url("/assets/footer/portrait_14.jpg"), url("/assets/footer/portrait_15.jpg"),
+    url("/assets/footer/portrait_16.jpg"), url("/assets/footer/portrait_17.jpg"),
+    url("/assets/footer/portrait_18.jpg"), url("/assets/footer/portrait_19.jpg"),
+    url("/assets/footer/portrait_20.jpg");
+  background-repeat: no-repeat;
+  background-position: 0vw top, 10vw top, 20vw top, 30vw top, 40vw top, 50vw top,
+    60vw top, 70vw top, 80vw top, 90vw top, 0vw bottom, 10vw bottom, 20vw bottom,
+    30vw bottom, 40vw bottom, 50vw bottom, 60vw bottom, 70vw bottom, 80vw bottom,
+    90vw bottom;
+  background-size: 10vw;
+}

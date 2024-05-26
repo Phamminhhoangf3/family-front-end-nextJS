@@ -1,0 +1,99 @@
+.tree ul {
+  margin-left: 140px;
+  padding: 0;
+  list-style: none;
+  color: #369;
+  position: relative;
+}
+.tree li .container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 15px 0px;
+}
+.tree li.tree-item {
+  padding: 60px 0;
+}
+.tree li.tree-item.odd {
+  background-color: rgb(227, 228, 229);
+}
+.tree li.tree-item.even {
+  background-color: rgb(215, 215, 215);
+}
+.tree li .row {
+  display: flex;
+}
+.tree li .row .sticky {
+  margin-right: 50px;
+  width: max-content;
+}
+.tree li .row .sticky.line {
+  position: relative;
+}
+.tree li .row .sticky.line:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 65px;
+  right: -50%;
+  width: 50px;
+  height: 3px;
+  border-top: 3px solid rgb(137, 136, 136);
+}
+.tree li .row .sticky.line.parent:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -92px;
+  right: -50%;
+  width: 280px;
+  height: 155px;
+  border-top: 3px solid rgb(137, 136, 136);
+  border-left: 3px solid rgb(137, 136, 136);
+}
+.tree li.first .sticky.children:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 330px;
+  height: 60px;
+  border-top: 3px solid rgb(137, 136, 136);
+  border-right: 3px solid rgb(137, 136, 136);
+}
+.tree li.not-first .sticky.children:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 90px;
+  left: -190px;
+  width: 330px;
+  height: 60px;
+  border-top: 3px solid rgb(137, 136, 136);
+  border-right: 3px solid rgb(137, 136, 136);
+}
+.tree li.first {
+  padding: 150px 0 0 190px;
+  margin: 0;
+  position: relative;
+  width: 470px;
+  margin-right: 50px;
+}
+.tree li.not-first {
+  padding: 150px 0 0 0;
+  margin: 0;
+  position: relative;
+  width: 280px;
+  margin-right: 50px;
+}
+
+.tree li .row-three::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -470px;
+  left: -2px;
+  width: 3px;
+  height: 563px;
+  border-left: 3px solid rgb(137, 136, 136);
+}

@@ -1,0 +1,39 @@
+.form-page {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+.form-page .title {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding: 10px 35px;
+  gap: 20px;
+}
+.form-page .title .family {
+  width: 30%;
+}
+.form-page .title .member {
+  width: 70%;
+}
+.form-page .container {
+  padding: 0px 35px 30px 35px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.form-page .container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-page .container .menu {
+  background-color: rgb(228, 226, 226);
+  width: 30%;
+  padding: 30px;
+}
+
+.form-page .container .content {
+  background-color: rgb(228, 226, 226);
+  width: 68%;
+}

@@ -1,0 +1,66 @@
+.member-card {
+  position: relative;
+  border-radius: 4px;
+  width: 280px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+}
+.member-card .tag {
+  padding: 6px 18px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(171, 35, 17);
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.member-card .avatar {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  flex: none;
+  border-radius: 4px 4px 0 0;
+}
+.member-card .avatar img {
+  border-radius: 4px 4px 0 0;
+}
+.member-card .information {
+  flex: 1 1 0%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 12px;
+  border-radius: 0 0 4px 4px;
+  background-color: white;
+}
+.member-card .information.selected {
+  background-color: rgb(171, 35, 17);
+  color: white;
+}
+.member-card .btn-add {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 4px solid rgb(227, 228, 229);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  cursor: pointer;
+}
+.member-card .btn-add:hover {
+  background-color: rgb(247, 246, 246);
+}

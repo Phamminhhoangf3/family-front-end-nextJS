@@ -1,0 +1,72 @@
+.section-2 {
+  background-color: white;
+}
+.section-2 .line{
+ height: 115px;
+ border-top: 1px solid #d2d0d0;
+}
+.section-2 .container {
+  max-width: 1076px;
+  margin: 0 auto;
+  padding-top: 78px;
+}
+.section-2 .container .wrap {
+  display: flex;
+  gap: 30px;
+}
+.section-2 .container .place-1,
+.section-2 .container .place-2,
+.section-2 .container .place-3 {
+  width: 100%;
+  padding: 40px;
+  background-color: #f2f3f4;
+}
+.section-2 .container .place-1 span,
+.section-2 .container .place-2 span,
+.section-2 .container .place-3 span {
+  display: block;
+}
+.section-2 .container .place-1 span.title,
+.section-2 .container .place-2 span.title,
+.section-2 .container .place-3 span.title {
+  color: rgb(169, 167, 167);
+  font-size: 16px;
+  font-weight: 600;
+}
+.section-2 .container .place-1 span.address,
+.section-2 .container .place-2 span.address,
+.section-2 .container .place-3 span.address {
+  color: rgb(104, 100, 100);
+  font-size: 20px;
+  margin-top: 6px;
+}
+.section-2 .container .place-3 {
+  margin-top: 30px;
+}
+.section-2 .container .description {
+  margin-top: 80px;
+}
+.section-2 .container .description .list-image {
+  display: flex;
+  gap: 16px;
+}
+.section-2 .container .description .list-image .image-1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  position: relative;
+}
+.section-2 .container .description .list-image .image-1 img{
+  border-radius: 6px;
+}
+.section-2 .container .description .content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.section-2 .container .description .content p {
+  color: rgb(98, 97, 97);
+  font-size: 22px;
+  font-weight: 500;
+}

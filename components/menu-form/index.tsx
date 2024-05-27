@@ -6,18 +6,12 @@ import { useState } from "react";
 const MenuForm = ({
   data,
   onSelectMember,
-  setMember,
+  setMemberSelected,
 }: {
   data: ChildrenDto[];
   onSelectMember: (member: ChildrenDto) => void;
-  setMember: (member: any) => void;
+  setMemberSelected: (handle: any) => void;
 }) => {
-  const handleItemExpansionToggle = (
-    _: React.SyntheticEvent,
-    itemId: string,
-  ) => {    
-    setMember((prev: any) => ({ memberSelect: prev.memberSelect, rootId: +itemId }));
-  };
   const handleMapTreeItem = (members: ChildrenDto[]) => {
     if (!members?.length) return;
     return members.map((item) => {
@@ -26,7 +20,7 @@ const MenuForm = ({
           key={item?.id}
           itemId={item?.id?.toString()}
           label={`${item?.name} ${item?.date}`}
-          onClick={(e) => {
+          onClick={() => {
             onSelectMember(item);
           }}
         >
@@ -36,11 +30,21 @@ const MenuForm = ({
     });
   };
 
+  const handleExpandedItemsChange = (
+    _: React.SyntheticEvent,
+    itemIds: string[]
+  ) => {
+    setMemberSelected((prev: any) => ({
+      ...prev,
+      idRoot: itemIds?.findLast((item) => item),
+    }));
+  };
+
   return (
     <SimpleTreeView
       multiSelect
       aria-label="file system navigator"
-      onItemExpansionToggle={handleItemExpansionToggle}
+      onExpandedItemsChange={handleExpandedItemsChange}
       sx={{
         color: "black",
         height: 200,

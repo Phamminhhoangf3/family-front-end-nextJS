@@ -2,16 +2,16 @@ import { ChildrenDto } from "@/types/member";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { useEffect } from "react";
+import { Button, ButtonBase, CircularProgress } from "@mui/material";
 
 const ContentMenu = ({
-  data,
-  memberRoot,
+  memberSelected,
+  onSubmit,
+  isLoading,
 }: {
-  data: {
-    memberSelect: ChildrenDto | null;
-    rootId: number | null;
-  };
-  memberRoot: ChildrenDto;
+  memberSelected: ChildrenDto | null;
+  onSubmit: (data: ChildrenDto) => void;
+  isLoading: boolean;
 }) => {
   const {
     register,
@@ -20,66 +20,14 @@ const ContentMenu = ({
     setValue,
   } = useForm<ChildrenDto>();
 
-  // const handleDataUpdate = (value: ChildrenDto) => {
-  //   if (!memberRoot) return null;
-  //   if (memberRoot?.id === data.memberSelect?.id) {
-  //     return {
-  //       ...memberRoot,
-  //       name: value?.name,
-  //       date: value?.date,
-  //       image: value?.image,
-  //     };
-  //   } else {
-  //     return {
-  //       ...memberRoot,
-  //       family: {
-  //         children: memberRoot?.family?.children?.map((item) => {
-  //           if (item?.id === data.memberSelect?.id) {
-  //             return {
-  //               ...item,
-  //               name: data.memberSelect?.name,
-  //               date: data.memberSelect?.date,
-  //               image: data.memberSelect?.image,
-  //             };
-  //           } else {}
-  //         }),
-  //       },
-  //     };
-  //   }
-  // };
-
-  const onSubmit: SubmitHandler<ChildrenDto> = async (values) => {
-    // try {
-    // const dataUpdate: any = handleDataUpdate(values);
-    // if (!dataUpdate) return;
-    // console.log({ data, listMembers });
-    // console.log({ dataUpdate });
-    //   const response = await fetch("http://localhost:3000/members/1", {
-    //     method: "PUT",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(dataUpdate),
-    //   });
-    //   if (response.ok) {
-    //     const updatedData = await response.json();
-    //     console.log("Cập nhật dữ liệu thành công:", updatedData);
-    //   } else {
-    //     console.error("Lỗi khi cập nhật dữ liệu:", response.status);
-    //   }
-    // } catch (error) {
-    //   console.log(error);
-    // }
-  };
-
   useEffect(() => {
-    if (!!data?.memberSelect) {
-      setValue("name", data?.memberSelect?.name);
-      setValue("date", data?.memberSelect?.date);
-      setValue("image", data?.memberSelect?.image);
-      setValue("id", data?.memberSelect?.id);
+    if (!!memberSelected) {
+      setValue("name", memberSelected?.name);
+      setValue("date", memberSelected?.date);
+      setValue("image", memberSelected?.image);
+      setValue("id", memberSelected?.id);
     }
-  }, [data?.memberSelect]);
+  }, [memberSelected]);
 
   return (
     <div className="form-container">
@@ -119,7 +67,10 @@ const ContentMenu = ({
         <div className="error-message">
           <ErrorMessage errors={errors} name="image" />
         </div>
-        <input type="submit" />
+        <Button type="submit" disabled={isLoading} variant="contained">
+          {isLoading && <CircularProgress size={12} sx={{ marginRight: 1, color: "white"}} />}
+          cập nhật
+        </Button>
       </form>
     </div>
   );

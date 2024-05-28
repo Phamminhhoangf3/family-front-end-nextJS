@@ -21,9 +21,10 @@
 .footer .above ul li .active {
   font-weight: bold;
 }
-
+.footer .above ul li a {
+  color: gray;
+}
 .footer .below {
-  opacity: 0.7;
   height: 20vw;
   background-color: white;
   background-image: url("/assets/footer/portrait_01.jpg"),

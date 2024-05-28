@@ -3,7 +3,6 @@
 }
 .section-1 .background {
   filter: blur(2px);
-  opacity: 0.4;
   height: 38vw;
   background-color: white;
   background-image: url("/assets/header/portrait_01.jpg"),
@@ -66,9 +65,11 @@
 .section-1 .container .member .information h1 {
   font-size: 70px;
   margin-bottom: 18px;
+  color:#fff;
 }
 .section-1 .container .member .information span {
   display: block;
   margin-bottom: 8px;
   font-size: 18px;
+  color:#fff;
 }

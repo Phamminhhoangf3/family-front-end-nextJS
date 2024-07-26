@@ -13,6 +13,7 @@ DOCUMENT PROJECT FAMILY
   + family must be on port 3001 or other than 3000
 - Note: must run start json-server firs,  Node.js version >= v18.17.0 is required.
 - repo json-server: https://github.com/Phamminhhoangf3/family-backend-json-server.git
+  
 2.Introduce:
 a.Landing page:
 - The landing page is located on the main page.

@@ -1,10 +1,10 @@
-import TreeComponent from "./tree";
+import Genealogy from "./genealogy";
 
 const Section3 = ({ data }: { data: any }) => {
   return (
     <div className="section-3">
       <div className="container">
-        <TreeComponent data={data} />
+        <Genealogy data={data} />
       </div>
     </div>
   );

@@ -143,7 +143,7 @@ export default function FormPage() {
 
   return (
     <>
-      <div className="form-page">
+      {/* <div className="form-page">
         <div className="title">
           <div className="family">Family Tree</div>
           <div className="member">MemberMember Form</div>
@@ -170,7 +170,7 @@ export default function FormPage() {
         autoHideDuration={1000}
         message="Cập nhật thành công!"
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-      />
+      /> */}
     </>
   );
 }

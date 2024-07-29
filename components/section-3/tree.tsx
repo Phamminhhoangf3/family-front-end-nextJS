@@ -94,19 +94,23 @@ const TreeItem = ({
 
 const TreeComponent = ({ data }: { data: ChildrenDto[] }) => {
   const [state, setState] = useState<ChildrenDto[]>([]);
+
   const handleAppendTree = (data: any) => {
     if (!state?.length || !data) return;
     const indexSameFather = state?.findIndex((item) => item?.dad === data?.dad);
+
     if (indexSameFather >= 0) {
       setState([...state.slice(0, indexSameFather), data]);
     } else {
       setState((prev) => [...prev, data]);
     }
   };
+
   useEffect(() => {
     if (!data?.length) return;
     setState(data);
   }, [data]);
+
   return (
     <div>
       <ul className="tree">

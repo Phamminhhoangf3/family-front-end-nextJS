@@ -1,8 +1,6 @@
-import { ChildrenDto } from "@/types/member";
 import TreeComponent from "./tree";
 
-const Section3 = ({ data }: { data: ChildrenDto[] }) => {
-  
+const Section3 = ({ data }: { data: any }) => {
   return (
     <div className="section-3">
       <div className="container">

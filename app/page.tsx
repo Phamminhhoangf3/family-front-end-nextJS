@@ -6,42 +6,22 @@ import Section1 from "@/components/section-1";
 import Section2 from "@/components/section-2";
 import TransitionHooks from "@/components/collapse";
 import Section3 from "@/components/section-3";
-// import { ChildrenDto } from "@/types/member";
-import data from "../data-mock/family.json";
+import {
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
 
 export default function Home() {
-  // const [data, setData] = React.useState<ChildrenDto[]>([]);
-
-  // const fetchFamily = async (url: string, options: RequestInit) => {
-  //   try {
-  //     const response = await fetch(url, options);
-  //     if (!response.ok) {
-  //       throw new Error(`Lỗi fetch API: ${response.status}`);
-  //     }
-  //     const data = await response.json();
-  //     setData(data);
-  //   } catch (error) {
-  //     console.error(error);
-  //     return null;
-  //   }
-  // };
-
-  // React.useEffect(() => {
-  //   fetchFamily("http://localhost:3000/members", {
-  //     method: "GET",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   });
-  // }, []);
-
+  const queryClient = new QueryClient();
   return (
-    <Layout>
-      <Section1 />
-      <TransitionHooks>
-        <Section2 />
-      </TransitionHooks>
-      <Section3 data={data.members} />
-    </Layout>
+    <QueryClientProvider client={queryClient}>
+      <Layout>
+        <Section1 />
+        <TransitionHooks>
+          <Section2 />
+        </TransitionHooks>
+        <Section3 />
+      </Layout>
+    </QueryClientProvider>
   );
 }

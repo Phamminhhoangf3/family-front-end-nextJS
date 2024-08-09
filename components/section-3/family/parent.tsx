@@ -5,7 +5,7 @@ const Parent = ({
   data,
   handleChildren,
 }: {
-  data: ChildrenDto;
+  data: FamilyDto;
   handleChildren: (data: any) => void;
 }) => {
   const renderClass = (family: FamilyDto) => {
@@ -17,27 +17,27 @@ const Parent = ({
 
   return (
     <div className="row">
-      <div className={renderClass(data?.family)}>
+      <div className={renderClass(data)}>
         <MemberCard
-          data={data?.family}
-          title={!!data?.family?.husband ? "husband" : "wife"}
+          data={data}
+          title={!!data?.husband ? "husband" : "wife"}
           handleChildren={handleChildren}
           selected
         />
       </div>
-      {!!data?.family?.wife && !!data?.family?.husband && (
+      {!!data?.wife && !!data?.husband && (
         <div className="sticky">
           <MemberCard
-            data={data?.family}
+            data={data}
             title="wife"
             handleChildren={handleChildren}
           />
         </div>
       )}
-      {!!data?.family?.exWife && (
+      {!!data?.exWife && (
         <div className="sticky">
           <MemberCard
-            data={data?.family}
+            data={data}
             title="exWife"
             handleChildren={handleChildren}
           />

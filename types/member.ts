@@ -27,9 +27,9 @@ export interface ChildrenDto {
 export interface FamilyDto {
   id: string;
   type: string;
-  husband: HusbandType;
-  wife: WifeType;
-  exWife?: WifeType;
+  husband: ChildrenDto;
+  wife: ChildrenDto;
+  exWife?: ChildrenDto;
   children: ChildrenDto[] | [];
 }
 

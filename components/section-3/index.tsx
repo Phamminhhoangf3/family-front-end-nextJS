@@ -1,10 +1,13 @@
+import { useQuery } from "@tanstack/react-query";
 import Genealogy from "./genealogy";
+import { getDetailFamily } from "@/apis";
+import data from "../../data-mock/family.json";
 
-const Section3 = ({ data }: { data: any }) => {
+const Section3 = () => {
   return (
     <div className="section-3">
       <div className="container">
-        <Genealogy data={data} />
+        <Genealogy />
       </div>
     </div>
   );

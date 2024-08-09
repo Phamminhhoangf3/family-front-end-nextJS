@@ -1,15 +1,15 @@
-import { ChildrenDto } from "@/types/member";
+import { ChildrenDto, FamilyDto } from "@/types/member";
 import MemberCard from "../../member";
 import { groupByThree } from "@/utils";
 
 type ChildrenType = {
-  data: ChildrenDto;
+  data: FamilyDto;
   handleChildren: (data: any) => void;
 };
 
 const Childrens = ({ data, handleChildren }: ChildrenType) => {
-  const groupChildren = !!data?.family?.children?.length
-    ? groupByThree(data?.family?.children)
+  const groupChildren = !!data?.children?.length
+    ? groupByThree(data?.children)
     : [];
 
   return (

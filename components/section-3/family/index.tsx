@@ -1,9 +1,9 @@
-import { ChildrenDto } from "@/types/member";
+import { ChildrenDto, FamilyDto } from "@/types/member";
 import Parent from "./parent";
 import Childrens from "./childrens";
 
 type FamilyType = {
-  data: ChildrenDto;
+  data: FamilyDto;
   handleChildren: (data: any) => void;
   index: number;
 };
